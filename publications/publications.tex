@@ -1,0 +1,17 @@
+\documentclass[]{article}
+\usepackage[english]{babel}
+\usepackage{datetime}
+\usepackage[backend=bibtex8, style=ieee, doi=false, isbn=false, url=false]{biblatex}
+\addbibresource{mybib.bib}
+
+\begin{document}
+\title{\huge List of Publications}
+\author{\Large \emph{Gionata Cimini}}
+\date{Updated to \today}
+\maketitle
+\nocite{*}
+\printbibliography[notkeyword={UR}, title={Journal Articles}, type={article}]
+\printbibliography[notkeyword={UR}, title={Book's Chapter}, type={incollection}]
+\printbibliography[notkeyword={UR}, title={Conference Proceedings}, type={inproceedings}]
+\printbibliography[keyword={UR}, title={Forthcoming or Under Review}]
+\end{document}
